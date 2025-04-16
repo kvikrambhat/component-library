@@ -1,66 +1,54 @@
-# dependencies
-/node_modules
-/client/node_modules
+# -----------------------
+# Core Bit Workspace Files
+# -----------------------
 
-# builds
-/build
-/client/build
+# Bit cache and runtime metadata (DO NOT COMMIT)
+.bit/
+.bit.*.json
+*.bit.*
+*.bitmap.json
 
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# Bit's temp ESLint and Prettier configs
+.eslintrc.json
+.prettierrc.cjs
 
-# runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
 
-# dotenv environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Bit dependency and cache folders
+node_modules/
+node_modules/.cache/
+node_modules/@teambit/
+node_modules/@bit/
 
-# OS
+# Bit logs, env temp files
+bit.env.json
+.bit-report.json
+
+# If using self-hosted scope stored in workspace (keep this if you want version control)
+# Uncomment the line below if you don't want to version your local scope
+# bit-scope/
+
+# -----------------------
+# Standard Ignores
+# -----------------------
+
+# pnpm lock (SHOULD be committed)
+# ❌ DO NOT ignore this!
+# pnpm-lock.yaml
+
+# Build artifacts (CRA, Vite, etc.)
+dist/
+build/
+
+# OS and Editor Junk
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
 
-# IDEs
-.vscode
-.idea
+# Test coverage
+coverage/
 
-# coverage reports
-/coverage
-/client/coverage
-
-# testing
-/jest-test-results.json
-
-# misc
-*.tgz
-.parcel-cache
-.cache
-.eslintcache
-
-# next.js (if using it anywhere)
-.next
-
-# storybook
-.out
-storybook-static
-
-# local db
-*.sqlite
-*.sqlite3
-
-# git submodules
-.git/modules
-
-# optional: skip lockfiles if you only use one package manager
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*

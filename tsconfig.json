@@ -1,18 +1,10 @@
+// bit-generated-typescript-config
 {
-    "compilerOptions": {
-      "target": "ESNext",
-      "module": "ESNext",
-      "jsx": "react-jsx",
-      "moduleResolution": "Node",
-      "strict": true,
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "skipLibCheck": true,
-      "declaration": true,
-      "declarationMap": true,
-      "outDir": "dist",
-      "baseUrl": "./src"
-    },
-    "include": ["src"]
+  "extends": "./node_modules/.cache/tsconfig.bit.8a8e26913a6191740f6dc8052f5cd46e8179d403.json",
+  "compilerOptions": {
+    "typeRoots": [
+      "./node_modules/.cache/global-types",
+      "./node_modules/@types"
+    ]
   }
-  
+}
